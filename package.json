@@ -1,0 +1,26 @@
+{
+  "name": "pynode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pyScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon pyScript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathankoike/PyNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathankoike/PyNode/issues"
+  },
+  "homepage": "https://github.com/nathankoike/PyNode#readme",
+  "dependencies": {
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
