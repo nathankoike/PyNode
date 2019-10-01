@@ -6,7 +6,6 @@ Desc: run a simple python script from within node
 
 */
 
-const request = require("request");
 const express = require("express");
 const fs = require("fs");
 const { exec } = require('child_process'); // enable command running
