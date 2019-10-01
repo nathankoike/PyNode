@@ -24,11 +24,12 @@ app.get("/", (req, res) => {
     if (err) console.log(err); // node couldn't run the command
   });
 
+  // this is needed to wait until the file has data written into it since disk
+  // access is very slow
   setTimeout(() => {
     // send the contents of the file
-    fs.readFile('name.txt', 'utf8', function(err, contents) {
-      res.send(contents);
-    });}, 100);
+    fs.readFile('name.txt', 'utf8', (err, contents) => res.send(contents));
+  }, 100); // 100 ms is the minimum time i've found so far
 
   console.log("done");
 });
